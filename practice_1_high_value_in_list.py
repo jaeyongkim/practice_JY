@@ -1,4 +1,4 @@
-#every day coding test [!]
+#every day coding test 2018.06.30 [!]
 '''
 Q : get a top value in serial three values.
 '''
