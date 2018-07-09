@@ -5,7 +5,7 @@ Q : Given an integer N, find the number of possible balanced parentheses with N 
 
 import copy
 
-# DUMMY = [1, 2, 3, 4, 5, 6, 10]
+# DUMMY = [4]
 DUMMY = [1, 2, 3]
 G_list = []
 G_Question = None
@@ -30,16 +30,12 @@ def combination_rule(past_list):
             past_list.append(2)
             combination_rule(past_list)
     else:
-        if past_list.count(2) == G_Question:
-            past_list.append(1)
-            combination_rule(past_list)
-        else:
-            cron_list = copy.copy(past_list)
-            if past_list.count(1) > past_list.count(2):
-                cron_list.append(2)
-                combination_rule(cron_list)
-            past_list.append(1)
-            combination_rule(past_list)
+        cron_list = copy.copy(past_list)
+        if past_list.count(1) > past_list.count(2):
+            cron_list.append(2)
+            combination_rule(cron_list)
+        past_list.append(1)
+        combination_rule(past_list)
 
 if __name__ == '__main__':
     for sample in DUMMY:
