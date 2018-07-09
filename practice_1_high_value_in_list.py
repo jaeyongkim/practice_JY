@@ -1,6 +1,6 @@
 #every day coding test 2018.06.30 [!]
 '''
-Q : get a top value in serial three values.
+Q : Given an integer array, find the largest consecutive sum of elements.
 '''
 
 DUMMY = [
