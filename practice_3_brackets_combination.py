@@ -5,8 +5,8 @@ Q : Given an integer N, find the number of possible balanced parentheses with N 
 
 import copy
 
-# DUMMY = [1, 2, 3, 4, 5, 10]
-DUMMY = [1, 2, 3]
+DUMMY = [1, 2, 3, 4, 5, 6, 10]
+# DUMMY = [1, 2, 3]
 G_list = []
 G_Question = None
 
@@ -25,6 +25,7 @@ def combination_rule(past_list):
     # print('%s : %s') % (type(past_list), past_list)
     if past_list.count(1) == G_Question:
         if past_list.count(2) == G_Question:
+            # G_list.append(past_list)
             G_list.append(map(lambda x: '(' if x==1 else ')', past_list))
             return
         else:
@@ -50,4 +51,4 @@ if __name__ == '__main__':
         G_list = []
         G_Question = sample
         combination_rule([1])
-        print ('%s --> %s') % (G_Question, G_list)
+        print ('%s --> %s --> %s') % (G_Question, G_list, len(G_list))
