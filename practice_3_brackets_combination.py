@@ -1,4 +1,4 @@
-#every day coding test 2018.07.02 [!]
+#every day coding test 2018.07.09 [!]
 '''
 Q : Given an integer N, find the number of possible balanced parentheses with N opening and closing brackets.
 '''
