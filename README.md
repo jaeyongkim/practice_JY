@@ -6,3 +6,4 @@ algorithm training
 1. get highest sum in list.
 2. fibonacci
 3. combination
+4. palindrome
