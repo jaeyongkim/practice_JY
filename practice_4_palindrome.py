@@ -18,7 +18,7 @@ def is_palindrome(input, digit):
     '''
      If I can use str, it will be so simple :)
      -------> input[::-1]
-
+        
      1. negative check
      2. digit check using max int size. -> 9223372036854775807
         -> too much.
@@ -43,8 +43,5 @@ def is_palindrome(input, digit):
 if __name__ == '__main__':
     for sample in DUMMY:
         # validation check about negative num.
-        if sample < 0:
-            checker = False
-        else:
-            checker = is_palindrome(sample, digit_check(sample))
+        checker = False if sample < 0 else is_palindrome(sample, digit_check(sample))
         print ('%d is palindrome -> %s') % (sample, checker)
