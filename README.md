@@ -7,3 +7,4 @@ algorithm training
 2. fibonacci
 3. combination
 4. palindrome
+5. list_search
