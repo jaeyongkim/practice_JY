@@ -8,20 +8,17 @@ DUMMY = [
     [[3, 6], [1, 3], [2, 4]]
 ]
 
-def get_merged_result(sets):
+def get_merged_result(lists):
+    front_num = None
     result_list = []
-    target_list = []
-    for v in sets:
-        if len(target_list) == 0:
-            target_list = [v, v]
-        else:
-            if target_list[-1]+1 == v:
-                target_list[-1] = v
-                if sets[-1] == v:
-                    result_list.append(target_list)
-            else:
-                result_list.append(target_list)
-                target_list = [v, v]
+    for i, v in enumerate(lists):
+        if front_num == None:
+            front_num = v
+        elif lists[i-1]+1 != v:
+            result_list.append([front_num, lists[i-1]])
+            front_num = v
+        elif i+1 == len(lists):
+            result_list.append([front_num, v])
     return result_list
 
 if __name__ == '__main__':
