@@ -8,3 +8,4 @@ algorithm training
 3. combination
 4. palindrome
 5. list_search
+6. intervals_merge
