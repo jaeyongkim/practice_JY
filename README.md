@@ -11,3 +11,4 @@ algorithm training
 6. intervals_merge
 7. reverse_string
 8. get second high value in list
+9. move element
