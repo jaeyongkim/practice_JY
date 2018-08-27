@@ -12,3 +12,4 @@ algorithm training
 7. reverse_string
 8. get second high value in list
 9. move element
+10. duplicate characters
