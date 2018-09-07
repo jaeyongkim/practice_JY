@@ -13,3 +13,4 @@ algorithm training
 8. get second high value in list
 9. move element
 10. duplicate characters
+11. one to one
